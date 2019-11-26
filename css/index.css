@@ -3,7 +3,12 @@ body {
   min-height: 100%;
   width: 100%;
   position: relative;
+  text-decoration: none;
+  line-height: 1;
+  background-color: white;
+  /* font-family: "Questrial", sans-serif; */
 }
+
 
 html {
   height: 100%;
@@ -16,8 +21,8 @@ html {
 }
 
 /* makes any image parallax */
-.wp-block-cover-image {
-  background-attachment: fixed;
+/* .wp-block-cover-image {
+  background-attachment: fixed; */
   /* background-position: 50% 0; */
 }
 
@@ -1143,16 +1148,10 @@ h3 {
   background-position: center;
   background-repeat: no-repeat !important;
   background-size: cover;
+  background-attachment: fixed;
   height: 90vh;
   margin-bottom: 0;
   overflow-x: hidden;
-}
-
-body {
-  text-decoration: none;
-  line-height: 1;
-  background-color: white;
-  /* font-family: "Questrial", sans-serif; */
 }
 
 .fab {
