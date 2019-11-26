@@ -1144,11 +1144,10 @@ h3 {
 /* hero image */
 .jumbotron {
   color: white;
-  /* background-image: url("../images/Sonoma_Scene.jpg"); */
+  background-image: url("../images/Sonoma_Scene.jpg");
   background-position: center;
   background-repeat: no-repeat !important;
   background-size: cover;
-  /* background-attachment: fixed; */
   height: 90vh;
   margin-bottom: 0;
   overflow-x: hidden;
@@ -1847,6 +1846,7 @@ a {
 
 .overlay-menu {
   background-image: url("images/coffee-cup.png");
+  background-attachment: fixed;
   font-family: "Roboto Slab", serif;
   overflow: hidden;
   z-index: 10;
