@@ -1134,7 +1134,7 @@ h3 {
   background-size: cover;
   height: 90vh;
   margin-bottom: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
