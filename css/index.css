@@ -1130,7 +1130,7 @@ h3 {
   color: white;
   background-image: url("../images/Sonoma_Scene.jpg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   background-size: cover;
   height: 90vh;
   margin-bottom: 0;
