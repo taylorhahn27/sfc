@@ -7,8 +7,14 @@
 /* makes any image parallax */
 .wp-block-cover-image {
   background-attachment: fixed;
-  background-position: 50% 0;
+  /* background-position: 50% 0; */
 }
+
+/* @media only screen and (max-width: 1024px) {
+  .jumbotron {
+    background-attachment: initial !important;
+  }
+} */
 
 /****************************/
 
@@ -31,6 +37,13 @@
   cursor: pointer;
   border: none;
   font-size: 25px;
+}
+
+@media (max-width: 500px) {
+  #drink-button,
+  #eat-button {
+    display: initial !important;
+  }
 }
 
 button:focus {
@@ -116,7 +129,6 @@ main {
   text-align: center;
 }
 
-
 .copy {
   position: absolute;
   bottom: 0;
@@ -150,6 +162,7 @@ main {
   font-family: "Roboto Slab", serif;
   padding-top: 100px;
   position: relative;
+  padding-bottom: 50px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -184,7 +197,6 @@ main {
 }
 
 @media (max-width: 767px) {
-
   .message1,
   .message {
     width: 100% !important;
@@ -271,7 +283,6 @@ main {
 
 /********************************/
 
-
 .right-arrow:hover {
   padding-right: 8px;
 }
@@ -341,7 +352,6 @@ main {
 h4 {
   color: #2b8d7b !important;
 }
-
 
 /* RENT + JOIN HTML  */
 
@@ -926,7 +936,7 @@ ul.social-network li {
 
 /* GALLERY */
 
-.image>div {
+.image > div {
   padding: 0 4px !important;
 }
 
@@ -1767,11 +1777,13 @@ a {
     -webkit-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s
+      cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -o-transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+      -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .menuIcon.toggle .icon-bars::before {
@@ -1789,11 +1801,13 @@ a {
     -webkit-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s
+      cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -o-transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+      -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .menuIcon.toggle .icon-bars.overlay {
@@ -2370,7 +2384,7 @@ body.hero-anime #switch {
     transition: all 200ms linear;
   }
 
-  .dropdown-toggle[aria-expanded="true"]+.dropdown-menu {
+  .dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
     margin-top: 10px !important;
     margin-bottom: 20px !important;
   }
