@@ -1,7 +1,8 @@
-/*============================================================================
-                                    Évelym S.
-                    https://www.linkedin.com/in/evelym-santos/
-  ============================================================================*/
+// $.each($("*"), function() {
+//   if ($(this).width() > $("body").width()) {
+//     console.log("Wide Element: ", $(this), "Width: ", $(this).width());
+//   }
+// });
 
 // Navigation
 // Responsive Toggle Navigation =============================================

@@ -1,21 +1,22 @@
 body {
-  -webkit-overflow-scrolling: touch;
+  /* -webkit-overflow-scrolling: touch; */
   min-height: 100%;
-  width: 100%;
+  width: auto;
   position: relative;
   text-decoration: none;
   line-height: 1;
   background-color: white;
-  overflow: hidden;
+  overflow-x: hidden !important;
+  /* overflow-y: hidden !important; */
+
   /* font-family: "Questrial", sans-serif; */
 }
 
-
-html {
+/* html {
   width: auto;
   height: 100%;
   overflow: hidden;
-}
+} */
 
 .contact {
   text-align: center;
@@ -26,8 +27,7 @@ html {
 /* makes any image parallax */
 /* .wp-block-cover-image {
   background-attachment: fixed; */
-  /* background-position: 50% 0; */
-}
+/* background-position: 50% 0; */
 
 /* @media only screen and (max-width: 1024px) {
   .jumbotron {
@@ -136,7 +136,12 @@ main {
   padding-bottom: 100px;
 }
 
+.footer {
+  width: 100%;
+}
+
 .footer-info {
+  overflow-y: hidden !important;
   padding-top: 200px;
   letter-spacing: 3px;
   font-family: "Work Sans", sans-serif;
@@ -145,10 +150,12 @@ main {
 }
 
 .copyright {
+  overflow-y: hidden !important;
   text-align: center;
 }
 
 .copy {
+  overflow-y: hidden !important;
   position: absolute;
   bottom: 0;
   font-size: 12px;
