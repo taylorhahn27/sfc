@@ -1846,6 +1846,7 @@ a {
 
 .overlay-menu {
   background-image: url("images/coffee-cup.png");
+  background-attachment: fixed;
   font-family: "Roboto Slab", serif;
   overflow: hidden;
   z-index: 10;
