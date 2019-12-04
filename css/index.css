@@ -60,6 +60,7 @@ body {
 }
 
 @media (min-width: 500px) {
+
   #drink-button,
   #eat-button {
     display: initial !important;
@@ -147,7 +148,7 @@ main {
   letter-spacing: 3px;
   font-family: "Work Sans", sans-serif;
   line-height: 2rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #c5d9e7;
 }
 
 .copyright {
@@ -224,6 +225,7 @@ main {
 }
 
 @media (max-width: 767px) {
+
   .message1,
   .message {
     width: 100% !important;
@@ -511,6 +513,13 @@ h4 {
   z-index: 2;
 }
 
+/* @media (min-width: 767px) {
+  .message {
+    padding: 30px;
+    margin: 30px
+  }
+} */
+
 .message {
   position: relative;
   width: 550px;
@@ -542,6 +551,15 @@ h4 {
   right: 25px;
   z-index: 1;
 }
+
+@media (max-width: 767px) {
+
+  .message1,
+  .message {
+    width: 90% !important;
+  }
+}
+
 
 .message1:before,
 .message:before {
@@ -963,7 +981,7 @@ ul.social-network li {
 
 /* GALLERY */
 
-.image > div {
+.image>div {
   padding: 0 4px !important;
 }
 
@@ -1798,15 +1816,13 @@ a {
     -webkit-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    -webkit-transition: -webkit-transform 0.4s
-      cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -o-transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s
-      cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s
-      cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
       -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
@@ -1830,15 +1846,13 @@ a {
     -webkit-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    -webkit-transition: -webkit-transform 0.4s
-      cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -o-transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s
-      cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s
-      cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
       -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
@@ -1935,8 +1949,15 @@ a {
 } */
 
 .overlay-info {
+  padding: 40px;
   display: block;
   font-size: 1.8em;
+  letter-spacing: 4px;
+}
+
+.overlay-hours {
+  display: block;
+  font-size: 1em;
   letter-spacing: 4px;
 }
 
@@ -2422,7 +2443,7 @@ body.hero-anime #switch {
     transition: all 200ms linear;
   }
 
-  .dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
+  .dropdown-toggle[aria-expanded="true"]+.dropdown-menu {
     margin-top: 10px !important;
     margin-bottom: 20px !important;
   }
