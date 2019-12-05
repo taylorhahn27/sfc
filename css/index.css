@@ -199,6 +199,10 @@ main {
   }
 }
 
+.mc-banner {
+  bottom: 0;
+}
+
 @media (max-width: 767px) {
   .menu-text {
     padding-top: 15px !important;
