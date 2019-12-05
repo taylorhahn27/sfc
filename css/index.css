@@ -13,6 +13,10 @@ body {
   /* font-family: "Questrial", sans-serif; */
 }
 
+a {
+  text-decoration: none !important;
+}
+
 /* html {
   width: auto;
   height: 100%;
@@ -59,10 +63,7 @@ body {
   font-size: 25px;
 }
 
-
-
 @media (min-width: 500px) {
-
   #drink-button,
   #eat-button {
     display: initial !important;
@@ -80,7 +81,6 @@ button:focus {
   width: 100%;
   color: #2b8d7b;
   padding-top: 30px;
-  height: 20px;
 }
 
 .active1 {
@@ -231,7 +231,6 @@ main {
 }
 
 @media (max-width: 767px) {
-
   .message1,
   .message {
     width: 100% !important;
@@ -559,13 +558,11 @@ h4 {
 }
 
 @media (max-width: 767px) {
-
   .message1,
   .message {
     width: 90% !important;
   }
 }
-
 
 .message1:before,
 .message:before {
@@ -714,13 +711,6 @@ h4 {
 } */
 
 /* hero image social icons */
-
-body {
-  /* overflow-x: hidden;
-  margin: 0; */
-  height: 100%;
-  overflow: auto;
-}
 
 .contact-graphic {
   margin-top: 0px;
@@ -987,7 +977,7 @@ ul.social-network li {
 
 /* GALLERY */
 
-.image>div {
+.image > div {
   padding: 0 4px !important;
 }
 
@@ -1822,13 +1812,17 @@ a {
     -webkit-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s
+      cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -o-transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s
+      cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s
+      cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+      -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
       -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
@@ -1852,13 +1846,17 @@ a {
     -webkit-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s
+      cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -o-transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s
+      cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s
+      cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+      -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
       -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
@@ -1879,22 +1877,17 @@ a {
 /*======================================================
                    Responsive Mobile Menu 
   ======================================================*/
-/* body { 
-    overflow-y: hidden !important;
-  } */
 
 .overlay-menu {
   overflow: hidden;
   background-image: url("images/coffee-cup.png");
   background-attachment: fixed;
   font-family: "Roboto Slab", serif;
-  overflow: hidden;
   z-index: 10;
   background: #fff;
   color: rgb(13, 26, 38);
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1904,6 +1897,9 @@ a {
   position: fixed;
   top: 0;
   right: 0;
+  left: 0;
+  bottom: 0;
+  display: block;
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
@@ -1921,7 +1917,7 @@ a {
 .overlay-menu li {
   margin: 0 auto;
   width: 100%;
-  padding: 40px;
+  padding: 25px;
   display: block;
   /* position: relative; */
 }
@@ -2450,7 +2446,7 @@ body.hero-anime #switch {
     transition: all 200ms linear;
   }
 
-  .dropdown-toggle[aria-expanded="true"]+.dropdown-menu {
+  .dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
     margin-top: 10px !important;
     margin-bottom: 20px !important;
   }
