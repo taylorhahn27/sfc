@@ -1,3 +1,16 @@
+// mail chimp
+
+type =
+  "text/javascript" >
+  window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
+    L.start({
+      baseUrl: "mc.us7.list-manage.com",
+      uuid: "4ae5921a3912b451ab862009e",
+      lid: "c5b62202c9",
+      uniqueMethods: true
+    });
+  });
+
 // $.each($("*"), function() {
 //   if ($(this).width() > $("body").width()) {
 //     console.log("Wide Element: ", $(this), "Width: ", $(this).width());
@@ -83,18 +96,6 @@ for (var i = 0; i < btns.length; i++) {
 //   $("#button-background .button.active").removeClass("active");
 //   $(this).addClass("active");
 // });
-
-// mail chimp
-type =
-  "text/javascript" >
-  window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
-    L.start({
-      baseUrl: "mc.us7.list-manage.com",
-      uuid: "4ae5921a3912b451ab862009e",
-      lid: "c5b62202c9",
-      uniqueMethods: true
-    });
-  });
 
 //menu switching
 function show(id) {
