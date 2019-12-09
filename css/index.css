@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 html,
 body {
   /* -webkit-overflow-scrolling: touch; */
@@ -9,6 +11,7 @@ body {
   background-color: white;
   padding: 0px;
   overflow-x: hidden !important;
+  font-family: 'Josefin Sans', sans-serif;
   /* overflow-y: hidden !important; */
   /* font-family: "Questrial", sans-serif; */
 }
@@ -24,7 +27,6 @@ a:hover {
 .contact {
   text-align: center;
   padding-top: 300px;
-  font-family: "Roboto Slab", serif;
 }
 
 /****************************/
@@ -50,7 +52,78 @@ a:hover {
   font-size: 25px;
 }
 
+/* make menu buttons wiggle periodically */
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  80% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  85% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+
+  95% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  80% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  85% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+
+  95% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+div.wiggle {
+  display: inline-block;
+  -webkit-animation: wiggle 2.5s infinite;
+  animation: wiggle 2.5s infinite;
+}
+
+div.wiggle:hover {
+  -webkit-animation: none;
+  animation: none;
+}
+
+/*****/
+
+
 @media (min-width: 500px) {
+
   #drink-button,
   #eat-button {
     display: initial !important;
@@ -135,9 +208,9 @@ main {
   overflow-y: auto !important;
   padding-top: 200px;
   letter-spacing: 3px;
-  font-family: "Work Sans", sans-serif;
   line-height: 2rem;
   border-bottom: 1px solid #c5d9e7;
+  /* font-weight: lighter; */
 }
 
 .copyright {
@@ -157,7 +230,7 @@ main {
 /**********************************/
 
 .about {
-  font-family: "Roboto Slab", serif;
+  font-weight: lighter;
   padding-top: 100px;
   font-size: 15px;
   letter-spacing: 3px;
@@ -165,9 +238,7 @@ main {
   line-height: 2.5rem !important;
 }
 
-.contact-text {
-  font-family: "Roboto Slab", serif;
-}
+
 
 @media (max-width: 768px) {
   .quote-breaker {
@@ -176,10 +247,25 @@ main {
 }
 
 .quote-breaker {
-  font-family: "Roboto Slab", serif;
-  padding-top: 100px;
+  /* font-family: "Roboto Slab", serif; */
+  padding-top: 50px;
   position: relative;
   padding-bottom: 50px;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  background-color: #c5d9e7;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.no-tipping-clause {
+  position: relative;
+  font-size: 15px;
+  letter-spacing: 3px;
+  line-height: 2.5rem !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -202,22 +288,19 @@ main {
   font-size: 12px;
 }
 
-.contact-pages {
-  font-family: "Open Sans", sans-serif;
-}
-
 @media (min-width: 767px) {
   .test {
     margin-top: 50px !important;
   }
 }
 
-.title {
+/* .title {
   font-size: 60px !important;
   font-family: "Open Sans", sans-serif;
-}
+} */
 
 @media (max-width: 767px) {
+
   .message1,
   .message {
     width: 100% !important;
@@ -545,6 +628,7 @@ h4 {
 }
 
 @media (max-width: 767px) {
+
   .message1,
   .message {
     width: 90% !important;
@@ -706,14 +790,9 @@ h4 {
 
 /* MENU REPLACEMENT */
 
-/* #eat-menu,
-#drink-menu {
-  display: none;
-}
 
 #eat-button,
 #drink-button {
-  font-family: 'Ubuntu', sans-serif;
   width: 100px;
   background: #fff;
   border: none;
@@ -727,9 +806,8 @@ h4 {
   text-align: center;
   width: 100%;
   height: 45px;
-  background-color: #c5d9e7;
   color: #2b8d7b;
-} */
+}
 
 /*****************/
 
@@ -964,7 +1042,7 @@ ul.social-network li {
 
 /* GALLERY */
 
-.image > div {
+.image>div {
   padding: 0 4px !important;
 }
 
@@ -1030,7 +1108,7 @@ h3 {
 
 .menu-text {
   padding-bottom: 5px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans", sans-serif !important;
   border-bottom: 1px dashed grey;
   text-transform: uppercase;
   font-size: 16px;
@@ -1050,7 +1128,6 @@ h3 {
 
 a {
   color: inherit;
-  font-family: inherit;
   font-size: inherit;
   text-decoration: none;
 }
@@ -1065,7 +1142,6 @@ a {
 }
 
 #navbar {
-  font-family: "Roboto Slab", serif;
   background: white;
   color: rgb(13, 26, 38);
   position: fixed;
@@ -1401,15 +1477,13 @@ a {
     -webkit-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    -webkit-transition: -webkit-transform 0.4s
-      cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -o-transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s
-      cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s
-      cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
       -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
@@ -1435,15 +1509,13 @@ a {
     -webkit-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    -webkit-transition: -webkit-transform 0.4s
-      cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -o-transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s
-      cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s
-      cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
       -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
@@ -1471,7 +1543,6 @@ a {
   overflow: hidden;
   background-image: url("images/coffee-cup.png");
   background-attachment: fixed;
-  font-family: "Roboto Slab", serif;
   z-index: 10;
   background: #fff;
   color: rgb(13, 26, 38);
@@ -1500,6 +1571,7 @@ a {
   -o-transition: transform 0.2s ease-out;
   transition: transform 0.2s ease-out;
   transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  font-weight: lighter;
 }
 
 .overlay-menu ul,
@@ -2019,7 +2091,7 @@ body.hero-anime #switch {
     transition: all 200ms linear;
   }
 
-  .dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
+  .dropdown-toggle[aria-expanded="true"]+.dropdown-menu {
     margin-top: 10px !important;
     margin-bottom: 20px !important;
   }

@@ -1,15 +1,13 @@
-// mail chimp
-
-type =
-  "text/javascript" >
-  window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
-    L.start({
-      baseUrl: "mc.us7.list-manage.com",
-      uuid: "4ae5921a3912b451ab862009e",
-      lid: "c5b62202c9",
-      uniqueMethods: true
-    });
+// switch menu classes for color change on buttons
+var header = document.getElementById("button-background");
+var btns = header.getElementsByClassName("button");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active1");
+    current[0].className = current[0].className.replace(" active1", "");
+    this.className += " active1";
   });
+}
 
 // $.each($("*"), function() {
 //   if ($(this).width() > $("body").width()) {
@@ -43,25 +41,37 @@ toggleIcon.addEventListener("click", () => {
   }
 });
 
-// makes any image parallax
-(function($) {
-  /** change value here to adjust parallax level */
-  var parallax = -0.5;
+// mail chimp
 
-  var $bg_images = $(".wp-block-cover-image");
-  var offset_tops = [];
-  $bg_images.each(function(i, el) {
-    offset_tops.push($(el).offset().top);
-  });
-
-  $(window).scroll(function() {
-    var dy = $(this).scrollTop();
-    $bg_images.each(function(i, el) {
-      var ot = offset_tops[i];
-      $(el).css("background-position", "50% " + (dy - ot) * parallax + "px");
+type =
+  "text/javascript" >
+  window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
+    L.start({
+      baseUrl: "mc.us7.list-manage.com",
+      uuid: "4ae5921a3912b451ab862009e",
+      lid: "c5b62202c9",
+      uniqueMethods: true
     });
   });
-})(jQuery);
+
+// makes any image parallax
+// (function($) {
+//   var parallax = -0.5;
+
+//   var $bg_images = $(".wp-block-cover-image");
+//   var offset_tops = [];
+//   $bg_images.each(function(i, el) {
+//     offset_tops.push($(el).offset().top);
+//   });
+
+//   $(window).scroll(function() {
+//     var dy = $(this).scrollTop();
+//     $bg_images.each(function(i, el) {
+//       var ot = offset_tops[i];
+//       $(el).css("background-position", "50% " + (dy - ot) * parallax + "px");
+//     });
+//   });
+// })(jQuery);
 
 // maybe!!!!
 // (function($) {
@@ -78,17 +88,6 @@ toggleIcon.addEventListener("click", () => {
 //     });
 //   });
 // })(jQuery);
-
-// switch menu classes for color change on buttons
-var header = document.getElementById("button-background");
-var btns = header.getElementsByClassName("button");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active1");
-    current[0].className = current[0].className.replace(" active1", "");
-    this.className += " active1";
-  });
-}
 
 // // Add active class to the current button (highlight it)
 

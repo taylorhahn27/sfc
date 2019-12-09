@@ -10,16 +10,9 @@
   <!-- <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css"> -->
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-  <!-- nav -->
-  <link href="https://fonts.googleapis.com/css?family=Average+Sans&display=swap" rel="stylesheet">
-  <!-- about -->
-  <!-- quote -->
-  <!-- footer -->
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap" rel="stylesheet">
   <!-- menu txt -->
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
   <!-- Boostrap Css -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -110,39 +103,6 @@
     <div class=" jumbotron jumbotron-fluid">
     </div>
 
-    <!-- hero image -->
-    <!-- 
-  <div class="parallax-wrapper">
-    <div class="background background--hero">.
-
-    </div>
-    <section class="season-desc">
-      <div class="desc-wrapper">
-
-        <div class="row text-center align-items-center about"
-          style="background-image: url('images/SFC-flower-white-yellow.png'); background-position: 25% 17%; background-repeat: no-repeat;">
-          <div class="container-fluid col-md-8 col-offset-2 col-xs-6 col-xs-offset-2">
-            <h2>Sunflower History</h2>
-            <p class="contact-text">Welcome to the Sunflower Caffe. We are located on the historic Sonoma Plaza in the
-              heart
-              of the
-              California Wine Country. Our food is simple, our ingredients are real. We use salt from the San
-              Francisco Bay, Milk from cows grazing in the Sonoma County pastures and local organic eggs in all of
-              our
-              dishes. The Sunflower Caffe is located in Historic Landmark #501 - the old home of Salvador Vallejo.
-              He
-              ultimately lost it in a poker game, which worked out great for us.</p>
-          </div>
-        </div>
-        <div class="row text-center align-items-center quote-breaker">
-          <div class="col-md-12 col-xs-12">
-            <h2>"Keeping it simple. Keeping it fresh."</h2>
-          </div>
-        </div>
-
-      </div>
-  </div>
-  </section> -->
 
     <section class="about-section container pt-5"
       style="background-image: url('images/small-seed1.png'); background-repeat: no-repeat; background-position: 25% 30%;">
@@ -177,7 +137,7 @@
     <!-- menu replacing buttons -->
     <section id="both-menus">
 
-      <div id="button-background">
+      <div id="button-background" class="wiggle">
         <button class="button active1" id="eat-button" onclick="show('eat-menu')">Eat</button>
         <button class="button" id="drink-button" onclick="show('drink-menu')">Drink</button>
       </div>
@@ -733,98 +693,115 @@
     </div>
     </div>
 
-    <section class="photos">
-      <div id="gallery" class="masonry">
-        <div class="item 1">
 
-          <img src="images/sfc-2.jpg">
-        </div>
-        <div class="item 2">
-
-          <img src="images/sfc-4.jpg">
-        </div>
-        <div class="item 3">
-
-          <img src="images/sfc-8.jpg">
-        </div>
-        <div class="item 4">
-
-          <img src="images/sfc-1.jpg">
-        </div>
-        <div class="item 5">
-
-          <img src="images/sfc-20.jpg">
-        </div>
-        <div class="item 6">
-
-          <img src="images/sfc-6.jpg">
-        </div>
-        <div class="item 7">
-
-          <img src="images/sfc-11.jpg">
-        </div>
-        <div class="item 8">
-
-          <img src="images/sfc-15.jpg">
-        </div>
-        <div class="item 9">
-
-          <img src="images/sfc-9.jpg">
-        </div>
-        <div class="item 11">
-
-          <img src="images/sfc-10.jpg">
-        </div>
-        <div class="item 12">
-
-          <img src="images/sfc-13.jpg">
-        </div>
-        <div class="item 13">
-
-          <img src="images/sfc-12.jpg">
-        </div>
-
-      </div>
-    </section>
-
-    <!-- new footer -->
-    <div class="footer container-fluid">
-      <div class="row text-center footer-info">
-        <div class="col-xs-12 container align-self-center">
-          <h2>Sunflower Caffé</h2>
-          <p>Spring & Summer</p>
-          7am - 4pm<br>
-          <p>Fall & Winter</p>
-          8am - 3pm
-          </p>
-          <p>
-            (707) 996-6645
-          </p>
-          <p class="pt-4">
-            <a class="footer-location" href="https://goo.gl/maps/yZdu5j42J9mJRYWY7">
-              421 1st St W, Sonoma, CA 95476
-            </a>
-          </p>
+    <section class="about-section container">
+      <div class="row text-center align-items-center no-tipping-clause pt-5">
+        <div class="container-fluid col-sm-12 col-offset-2 col-xs-8 col-xs-offset-2">
+          <h2>Our Take on Tipping</h2>
+          In lieu of accepting tips, we apply a 13% Health and Happiness surcharge
+          to your order. This helps us pay every employee a good living wage in
+          addition to: <br><br>
+          <span class="dot"></span> revenue share in the company <span class="dot"></span><br>
+          <span class="dot"></span> medical coverage <span class="dot"></span><br>
+          <span class="dot"></span> 401k with company match <span class="dot"></span><br>
+          <span class="dot"></span> paid time off <span class="dot"></span>
         </div>
       </div>
 
-      <div class="row justify-content-center">
-        <div class="col-xs-12">
-          <p>&copy; 2019 Sunflower Caffé</p><br>
-          <p>created by Taylor-Made</p>
-        </div>
-      </div>
 
-      <div class="row justify-content-center">
-        <div class="col-xs-12">
-          <p>
-            <a href="https://www.facebook.com/SunflowerCaffe/"><img class="social-icons" src="images/fb.png"></a>
-            <a href="https://www.instagram.com/sunflowercaffe/"><img class="social-icons" src="images/ig.png"></a>
-            <a href="#"><img class="social-icons" src="images/twitter.png"></a>
-          </p>
+
+      <section class="photos">
+        <div id="gallery" class="masonry">
+          <div class="item 1">
+
+            <img src="images/sfc-2.jpg">
+          </div>
+          <div class="item 2">
+
+            <img src="images/sfc-4.jpg">
+          </div>
+          <div class="item 3">
+
+            <img src="images/sfc-8.jpg">
+          </div>
+          <div class="item 4">
+
+            <img src="images/sfc-1.jpg">
+          </div>
+          <div class="item 5">
+
+            <img src="images/sfc-20.jpg">
+          </div>
+          <div class="item 6">
+
+            <img src="images/sfc-6.jpg">
+          </div>
+          <div class="item 7">
+
+            <img src="images/sfc-11.jpg">
+          </div>
+          <div class="item 8">
+
+            <img src="images/sfc-15.jpg">
+          </div>
+          <div class="item 9">
+
+            <img src="images/sfc-9.jpg">
+          </div>
+          <div class="item 11">
+
+            <img src="images/sfc-10.jpg">
+          </div>
+          <div class="item 12">
+
+            <img src="images/sfc-13.jpg">
+          </div>
+          <div class="item 13">
+
+            <img src="images/sfc-12.jpg">
+          </div>
+
+        </div>
+      </section>
+
+      <!-- new footer -->
+      <div class="footer container-fluid">
+        <div class="row text-center footer-info">
+          <div class="col-xs-12 container align-self-center">
+            <h2>Sunflower Caffé</h2>
+            <p>Spring & Summer</p>
+            7am - 4pm<br>
+            <p>Fall & Winter</p>
+            8am - 3pm
+            </p>
+            <p>
+              (707) 996-6645
+            </p>
+            <p class="pt-4">
+              <a class="footer-location" href="https://goo.gl/maps/yZdu5j42J9mJRYWY7">
+                421 1st St W, Sonoma, CA 95476
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-xs-12">
+            <p>&copy; 2019 Sunflower Caffé</p><br>
+            <p>created by Taylor-Made</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-xs-12">
+            <p>
+              <a href="https://www.facebook.com/SunflowerCaffe/"><img class="social-icons" src="images/fb.png"></a>
+              <a href="https://www.instagram.com/sunflowercaffe/"><img class="social-icons" src="images/ig.png"></a>
+              <a href="#"><img class="social-icons" src="images/twitter.png"></a>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
   </main>
 
 
