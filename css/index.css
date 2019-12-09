@@ -236,6 +236,7 @@ main {
   letter-spacing: 3px;
   height: 600px;
   line-height: 2.5rem !important;
+  font-size: 18px;
 }
 
 
@@ -262,6 +263,8 @@ main {
 }
 
 .no-tipping-clause {
+  font-size: 18px !important;
+  font-weight: lighter;
   position: relative;
   font-size: 15px;
   letter-spacing: 3px;
@@ -1032,6 +1035,78 @@ ul.social-network li {
   }
 }
 
+@media (min-width: 767px) {
+  h4 {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: absolute;
+  }
+}
+
+/* .menu-header {
+  width: 200px;
+  padding-bottom: 150px;
+} */
+
+.sandwhich {
+  padding-left: 50px;
+  padding-bottom: 150px;
+}
+
+.eggs {
+  width: 170px;
+  padding-bottom: 140px;
+}
+
+.sweet {
+  width: 200px;
+  padding-bottom: 170px;
+}
+
+.soup {
+  width: 190px;
+  padding-bottom: 160px;
+}
+
+.smoothies {
+  padding-bottom: 115px;
+}
+
+.cold {
+  width: 240px;
+  padding-bottom: 210px;
+}
+
+.hot {
+  width: 210px;
+  padding-bottom: 180px;
+}
+
+.cocktails {
+  width: 190px;
+  padding-bottom: 160px;
+}
+
+.beer {
+  width: 190px;
+  padding-bottom: 160px;
+}
+
+.menu-header,
+.menu-header-mobile {
+  text-transform: uppercase;
+}
+
+
+
+/* h3 {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: absolute;
+} */
+
 /* @media (max-width: 767px) {
   .menu-header-mobile {
     padding-bottom: 2px !important;
@@ -1067,13 +1142,6 @@ img {
 
 .menu-section {
   border-left: 1px solid black;
-}
-
-h3 {
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  position: absolute;
 }
 
 /* hero image */
