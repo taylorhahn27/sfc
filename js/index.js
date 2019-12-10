@@ -1,20 +1,3 @@
-// switch menu classes for color change on buttons
-var header = document.getElementById("button-background");
-var btns = header.getElementsByClassName("button");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active1");
-    current[0].className = current[0].className.replace(" active1", "");
-    this.className += " active1";
-  });
-}
-
-// $.each($("*"), function() {
-//   if ($(this).width() > $("body").width()) {
-//     console.log("Wide Element: ", $(this), "Width: ", $(this).width());
-//   }
-// });
-
 // Navigation
 // Responsive Toggle Navigation =============================================
 let menuIcon = document.querySelector(".menuIcon");
@@ -41,8 +24,18 @@ toggleIcon.addEventListener("click", () => {
   }
 });
 
-// mail chimp
+// switch menu classes for color change on buttons
+var header = document.getElementById("button-background");
+var btns = header.getElementsByClassName("button");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active1");
+    current[0].className = current[0].className.replace(" active1", "");
+    this.className += " active1";
+  });
+}
 
+// mail chimp
 type =
   "text/javascript" >
   window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
@@ -53,6 +46,19 @@ type =
       uniqueMethods: true
     });
   });
+
+//menu switching
+function show(id) {
+  document.getElementById("main_place").innerHTML = document.getElementById(
+    id
+  ).innerHTML;
+}
+
+// $.each($("*"), function() {
+//   if ($(this).width() > $("body").width()) {
+//     console.log("Wide Element: ", $(this), "Width: ", $(this).width());
+//   }
+// });
 
 // makes any image parallax
 // (function($) {
@@ -96,19 +102,12 @@ type =
 //   $(this).addClass("active");
 // });
 
-//menu switching
-function show(id) {
-  document.getElementById("main_place").innerHTML = document.getElementById(
-    id
-  ).innerHTML;
-}
-
 // hero image
-$(".jumbotron").css({ height: $(window).height() + "px" });
+// $(".jumbotron").css({ height: $(window).height() + "px" });
 
-$(window).on("resize", function() {
-  $(".jumbotron").css({ height: $(window).height() + "px" });
-});
+// $(window).on("resize", function() {
+//   $(".jumbotron").css({ height: $(window).height() + "px" });
+// });
 
 // active class color change for menu buttons
 // $("#button-background .button").on("click", function() {
