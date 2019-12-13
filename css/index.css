@@ -1,6 +1,19 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+@font-face {
+  font-family: 'curwen_sansbold';
+  src: url('../fonts/webfontkit-bold/curwensans-bold-webfont.woff2') format('woff2'),
+    url('../fonts/webfontkit-bold/curwensans-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+}
+
+h4 {
+  font-family: 'curwen_sansbold' !important;
+  font-weight: normal;
+  font-style: normal;
+  color: #2b8d7b !important;
+}
+
 
 html,
 body {
@@ -42,7 +55,7 @@ a:hover {
 
 #drink-button,
 #eat-button {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Josefin Sans";
   width: 150px;
   background: none !important;
   padding: 0 !important;
@@ -458,9 +471,6 @@ main {
   border-radius: 5px;
 }
 
-h4 {
-  color: #2b8d7b !important;
-}
 
 /* RENT + JOIN HTML  */
 
@@ -1053,12 +1063,12 @@ ul.social-network li {
 
 .sandwhich {
   padding-left: 50px;
-  padding-bottom: 150px;
+  padding-bottom: 173px;
 }
 
 .eggs {
-  width: 170px;
-  padding-bottom: 140px;
+  width: 180px;
+  padding-bottom: 150px;
 }
 
 .sweet {
@@ -1067,8 +1077,8 @@ ul.social-network li {
 }
 
 .soup {
-  width: 190px;
-  padding-bottom: 160px;
+  width: 210px;
+  padding-bottom: 180px;
 }
 
 .smoothies {
@@ -1085,7 +1095,7 @@ ul.social-network li {
   padding-bottom: 180px;
 }
 
-.cocktails {
+.champagne {
   width: 190px;
   padding-bottom: 160px;
 }
