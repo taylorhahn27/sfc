@@ -224,7 +224,6 @@ main {
   padding-top: 200px;
   letter-spacing: 3px;
   line-height: 2rem;
-  font-weight: 400;
   border-bottom: 1px solid #c5d9e7;
   font-weight: lighter;
 }
@@ -1162,7 +1161,7 @@ img {
   background-position: center;
   background-repeat: no-repeat !important;
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
   margin-bottom: 0;
   overflow-x: hidden;
 }
