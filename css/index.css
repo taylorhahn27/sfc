@@ -224,6 +224,7 @@ main {
   padding-top: 200px;
   letter-spacing: 3px;
   line-height: 2rem;
+  font-weight: 400;
   border-bottom: 1px solid #c5d9e7;
   font-weight: lighter;
 }
@@ -1698,6 +1699,7 @@ a {
 }
 
 .menu-location {
+  text-transform: uppercase;
   text-decoration: none !important;
 }
 
