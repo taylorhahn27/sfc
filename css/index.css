@@ -246,7 +246,7 @@ main {
 
 .about {
   font-weight: lighter;
-  padding-top: 100px;
+  padding-top: 200px;
   font-size: 15px;
   letter-spacing: 3px;
   height: 600px;
@@ -264,9 +264,8 @@ main {
 
 .quote-breaker {
   /* font-family: "Roboto Slab", serif; */
-  padding-top: 50px;
   position: relative;
-  padding-bottom: 50px;
+  height: 450px;
 }
 
 .dot {
