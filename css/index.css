@@ -251,7 +251,7 @@ main {
   padding-top: 200px;
   font-size: 15px;
   letter-spacing: 3px;
-  height: 600px;
+  height: 400px;
   line-height: 2.5rem !important;
   font-size: 18px;
 }
@@ -260,15 +260,15 @@ main {
 
 @media (max-width: 768px) {
   .quote-breaker {
-    margin-top: 250px !important;
-    height: 300px !important;
+    margin-top: 200px !important;
+    height: 400px !important;
   }
 }
 
 .quote-breaker {
   /* font-family: "Roboto Slab", serif; */
   position: relative;
-  height: 450px;
+  height: 350px;
 }
 
 .dot {
@@ -278,6 +278,8 @@ main {
   border-radius: 50%;
   display: inline-block;
 }
+
+
 
 
 .no-tipping-clause {
