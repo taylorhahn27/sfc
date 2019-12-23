@@ -260,7 +260,8 @@ main {
 
 @media (max-width: 768px) {
   .quote-breaker {
-    padding-top: 150px !important;
+    margin-top: 200px !important;
+    height: 300px !important;
   }
 }
 
