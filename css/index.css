@@ -247,28 +247,27 @@ main {
 /**********************************/
 
 .about {
-  font-weight: lighter;
   padding-top: 200px;
+  padding-bottom: 200px;
+  font-weight: lighter;
   font-size: 15px;
   letter-spacing: 3px;
-  height: 400px;
+  height: auto;
   line-height: 2.5rem !important;
   font-size: 18px;
+  position: relative;
 }
 
 
-
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .quote-breaker {
     margin-top: 300px !important;
     height: 450px !important;
   }
-}
+} */
 
 .quote-breaker {
-  /* font-family: "Roboto Slab", serif; */
-  position: relative;
-  height: 350px;
+  padding-top: 25px;
 }
 
 .dot {
