@@ -1,21 +1,19 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 
 @font-face {
-  font-family: 'curwen_sansbold';
-  src: url('../fonts/webfontkit-bold/curwensans-bold-webfont.woff2') format('woff2'),
-    url('../fonts/webfontkit-bold/curwensans-bold-webfont.woff') format('woff');
+  font-family: "curwen_sansbold";
+  src: url("../fonts/webfontkit-bold/curwensans-bold-webfont.woff2") format("woff2"),
+    url("../fonts/webfontkit-bold/curwensans-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
 
 h4 {
-  font-family: 'curwen_sansbold' !important;
+  font-family: "curwen_sansbold" !important;
   font-weight: normal;
   font-style: normal;
   color: #2b8d7b !important;
 }
-
 
 html,
 body {
@@ -28,7 +26,7 @@ body {
   background-color: white;
   padding: 0px;
   overflow-x: hidden !important;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   /* overflow-y: hidden !important; */
   /* font-family: "Questrial", sans-serif; */
 }
@@ -138,7 +136,6 @@ div.wiggle:hover {
 
 /*****/
 
-
 @media (min-width: 500px) {
 
   #drink-button,
@@ -189,9 +186,19 @@ button:hover {
   font-size: 85%;
 }
 
+@font-face {
+  font-family: "curwen_sansregular";
+  src: url("../fonts/webfontkit/curwensans-webfont.woff2") format("woff2"),
+    url("../fonts/webfontkit/curwensans-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .menu-text {
   padding-bottom: 5px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "curwen_sansregular" !important;
+  font-weight: normal;
+  font-style: normal;
   border-bottom: 1px dashed grey;
   text-transform: uppercase;
   font-size: 16px;
@@ -258,7 +265,6 @@ main {
   position: relative;
 }
 
-
 /* @media (max-width: 768px) {
   .quote-breaker {
     margin-top: 300px !important;
@@ -277,9 +283,6 @@ main {
   border-radius: 50%;
   display: inline-block;
 }
-
-
-
 
 .no-tipping-clause {
   font-size: 18px !important;
@@ -474,7 +477,6 @@ main {
   background-color: white;
   border-radius: 5px;
 }
-
 
 /* RENT + JOIN HTML  */
 
@@ -810,7 +812,6 @@ main {
 
 /* MENU REPLACEMENT */
 
-
 #eat-button,
 #drink-button {
   width: 100px;
@@ -973,7 +974,6 @@ ul.social-network li {
   overflow-x: hidden;
 } */
 
-
 /*************************/
 
 /* .full-width {
@@ -1083,15 +1083,16 @@ ul.social-network li {
 }
 
 .smoothies {
-  padding-bottom: 115px;
+  padding-bottom: 105px;
 }
 
-.cold {
-  width: 240px;
+.coldbev {
   padding-bottom: 210px;
+  width: 240px;
 }
 
-.hot {
+
+.hotbev {
   width: 210px;
   padding-bottom: 180px;
 }
@@ -1110,8 +1111,6 @@ ul.social-network li {
 .menu-header-mobile {
   text-transform: uppercase;
 }
-
-
 
 /* h3 {
   -webkit-transform: rotate(-90deg);
@@ -1183,18 +1182,10 @@ img {
 
 .menu-ingredients,
 .adds-sides {
+  text-transform: lowercase !important;
   line-height: 20px;
   color: gray;
   font-size: 85%;
-}
-
-.menu-text {
-  padding-bottom: 5px;
-  font-family: "Josefin Sans", sans-serif !important;
-  border-bottom: 1px dashed grey;
-  text-transform: uppercase;
-  font-size: 16px;
-  color: black !important;
 }
 
 .hot .cold {
@@ -1565,7 +1556,8 @@ a {
     -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+      -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
       -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
@@ -1597,7 +1589,8 @@ a {
     -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+      -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
       -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
