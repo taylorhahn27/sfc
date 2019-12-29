@@ -1,7 +1,10 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 @media only screen and (max-width: 768px) {
   .mc-banner {
     display: none !important;
   }
+}
 
   @font-face {
     font-family: "curwen_sansbold";
@@ -294,16 +297,6 @@
     font-size: 15px;
     letter-spacing: 3px;
     line-height: 2.5rem !important;
-  }
-
-  @media only screen and (max-width: 768px) {
-    .mc-banner {
-      z-index: 9999 !important;
-    }
-  }
-
-  .mc-banner {
-    bottom: 0;
   }
 
   @media (max-width: 767px) {
@@ -1559,6 +1552,7 @@ footer a:hover {
       -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
         -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
@@ -1592,6 +1586,7 @@ footer a:hover {
       -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
         -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
