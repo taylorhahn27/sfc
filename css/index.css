@@ -3,6 +3,10 @@ button {
 }
 
 .modal {
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
   padding-top: 20px;
   z-index: 10000 !important;
 }
