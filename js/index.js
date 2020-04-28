@@ -1,8 +1,12 @@
-window.onload = function() {
-  document.getElementById("button").onclick = function() {
-    document.getElementById("modal").style.display = "none";
-  };
-};
+$(document).ready(function () {
+  $("#myModal").modal("show");
+});
+
+// window.onload = function() {
+//   document.getElementById("button").onclick = function() {
+//     document.getElementById("modal").style.display = "none";
+//   };
+// };
 
 // Navigation
 // Responsive Toggle Navigation =============================================
@@ -34,7 +38,7 @@ toggleIcon.addEventListener("click", () => {
 var header = document.getElementById("button-background");
 var btns = header.getElementsByClassName("button");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
+  btns[i].addEventListener("click", function () {
     var current = document.getElementsByClassName("active1");
     current[0].className = current[0].className.replace(" active1", "");
     this.className += " active1";
@@ -44,12 +48,12 @@ for (var i = 0; i < btns.length; i++) {
 // mail chimp
 type =
   "text/javascript" >
-  window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
+  window.dojoRequire(["mojo/signup-forms/Loader"], function (L) {
     L.start({
       baseUrl: "mc.us7.list-manage.com",
       uuid: "4ae5921a3912b451ab862009e",
       lid: "c5b62202c9",
-      uniqueMethods: true
+      uniqueMethods: true,
     });
   });
 
