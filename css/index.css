@@ -12,7 +12,9 @@ button {
   color: white;
 }
 
-
+.yellow-arrow {
+  color: #e4b95b;
+}
 
 @media only screen and (max-width: 768px) {
   .mc-banner {
