@@ -1,3 +1,14 @@
+// switch menu classes for color change on buttons
+var header = document.getElementById("button-background");
+var btns = header.getElementsByClassName("button");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active1");
+    current[0].className = current[0].className.replace(" active1", "");
+    this.className += " active1";
+  });
+}
+
 $(document).ready(function () {
   $("#myModal").modal("show");
 });
@@ -33,17 +44,6 @@ toggleIcon.addEventListener("click", () => {
     toggleIcon.className = "menuIcon";
   }
 });
-
-// switch menu classes for color change on buttons
-var header = document.getElementById("button-background");
-var btns = header.getElementsByClassName("button");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active1");
-    current[0].className = current[0].className.replace(" active1", "");
-    this.className += " active1";
-  });
-}
 
 // mail chimp
 type =
