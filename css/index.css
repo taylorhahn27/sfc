@@ -1,3 +1,37 @@
+.takeout {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  font-weight: lighter;
+  font-size: 15px;
+  letter-spacing: 3px;
+  height: auto;
+  line-height: 2.5rem !important;
+  font-size: 18px;
+  position: relative;
+}
+
+.iframe-container {
+  padding-bottom: 60%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.iframe-container iframe,
+.iframe-container object,
+.iframe-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal.in .modal-dialog {
+  transform: none;
+  /*translate(0px, 0px);*/
+}
+
 button {
   outline: none !important;
 }
@@ -284,7 +318,7 @@ main {
 
 .about {
   padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   font-weight: lighter;
   font-size: 15px;
   letter-spacing: 3px;
