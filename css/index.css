@@ -1,3 +1,49 @@
+.img-responsive-menu {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#menu-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* .takeout-button {
+  float: top;
+  font-family: "Josefin Sans";
+  width: 200px;
+  background: none !important;
+  padding: 0 !important;
+  padding: 5px;
+  border-radius: 4px;
+  text-decoration: none !important;
+  cursor: pointer;
+  font-size: 25px;
+  border-radius: 30px;
+  border: none;
+} */
+
+.takeout-button {
+  padding: 20px;
+  font-family: Raleway-SemiBold;
+  font-size: 25px;
+  color: black;
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid #c5d9e7;
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.takeout-button:hover {
+  color: #FFF;
+  background: #c5d9e7;
+  border: 2px solid #c5d9e7;
+}
+
+
 .menu-page {
   padding-top: 200px;
 }
@@ -1225,7 +1271,7 @@ img {
   background-position: center;
   background-repeat: no-repeat !important;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   margin-bottom: 0;
   overflow-x: hidden;
 }
