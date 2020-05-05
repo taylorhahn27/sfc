@@ -1,4 +1,19 @@
-.about1 {
+.menu-page {
+  padding-top: 200px;
+}
+
+.img-responsive-menu {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#menu-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* .about1 {
   font-weight: lighter;
   font-size: 15px;
   letter-spacing: 3px;
@@ -7,9 +22,9 @@
   font-size: 18px;
   position: relative;
   padding-bottom: 50px;
-}
+} */
 
-#take-out-menu {
+/* #take-out-menu {
   text-align: center;
   font-family: "Josefin Sans";
   background: none !important;
@@ -21,7 +36,7 @@
   border: none;
   font-size: 18px;
   letter-spacing: 3px;
-}
+} */
 
 /* padding-top: 200px;
 padding-bottom: 200px;
@@ -47,7 +62,8 @@ button {
 }
 
 .modal-content {
-  background-color: white !important;
+  background-color: white;
+   !important;
   color: black;
   font-weight: lighter;
 }
@@ -70,8 +86,7 @@ button {
 
 @font-face {
   font-family: "curwen_sansbold";
-  src: url("../fonts/webfontkit-bold/curwensans-bold-webfont.woff2")
-      format("woff2"),
+  src: url("../fonts/webfontkit-bold/curwensans-bold-webfont.woff2") format("woff2"),
     url("../fonts/webfontkit-bold/curwensans-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -207,6 +222,7 @@ div.wiggle:hover {
 /*****/
 
 @media (min-width: 500px) {
+
   #drink-button,
   #eat-button {
     display: initial !important;
@@ -384,6 +400,7 @@ main {
 } */
 
 @media (max-width: 767px) {
+
   .message1,
   .message {
     width: 100% !important;
@@ -707,6 +724,7 @@ main {
 }
 
 @media (max-width: 767px) {
+
   .message1,
   .message {
     width: 90% !important;
@@ -1186,7 +1204,7 @@ ul.social-network li {
 
 /* GALLERY */
 
-.image > div {
+.image>div {
   padding: 0 4px !important;
 }
 
@@ -1606,14 +1624,11 @@ a {
     -webkit-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    -webkit-transition: -webkit-transform 0.4s
-      cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -o-transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s
-      cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s
-      cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
       -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -1644,14 +1659,11 @@ a {
     -webkit-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    -webkit-transition: -webkit-transform 0.4s
-      cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -o-transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s
-      cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s
-      cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
       -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -2233,7 +2245,7 @@ body.hero-anime #switch {
     transition: all 200ms linear;
   }
 
-  .dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
+  .dropdown-toggle[aria-expanded="true"]+.dropdown-menu {
     margin-top: 10px !important;
     margin-bottom: 20px !important;
   }

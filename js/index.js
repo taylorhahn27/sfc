@@ -1,3 +1,29 @@
+// Navigation
+// Responsive Toggle Navigation =============================================
+let menuIcon = document.querySelector(".menuIcon");
+let nav = document.querySelector(".overlay-menu");
+
+menuIcon.addEventListener("click", () => {
+  if (nav.style.transform != "translateX(0%)") {
+    nav.style.transform = "translateX(0%)";
+    nav.style.transition = "transform 0.2s ease-out";
+  } else {
+    nav.style.transform = "translateX(-100%)";
+    nav.style.transition = "transform 0.2s ease-out";
+  }
+});
+
+// Toggle Menu Icon ========================================
+let toggleIcon = document.querySelector(".menuIcon");
+
+toggleIcon.addEventListener("click", () => {
+  if (toggleIcon.className != "menuIcon toggle") {
+    toggleIcon.className += " toggle";
+  } else {
+    toggleIcon.className = "menuIcon";
+  }
+});
+
 // switch menu classes for color change on buttons
 var header = document.getElementById("button-background");
 var btns = header.getElementsByClassName("button");
@@ -7,10 +33,6 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active1", "");
     this.className += " active1";
   });
-}
-
-function menu() {
-  window.open("images/SFC takeout menu.jpg");
 }
 
 $(document).ready(function () {
@@ -42,44 +64,6 @@ $(document).ready(function () {
 //     document.getElementById("modal").style.display = "none";
 //   };
 // };
-
-// Navigation
-// Responsive Toggle Navigation =============================================
-let menuIcon = document.querySelector(".menuIcon");
-let nav = document.querySelector(".overlay-menu");
-
-menuIcon.addEventListener("click", () => {
-  if (nav.style.transform != "translateX(0%)") {
-    nav.style.transform = "translateX(0%)";
-    nav.style.transition = "transform 0.2s ease-out";
-  } else {
-    nav.style.transform = "translateX(-100%)";
-    nav.style.transition = "transform 0.2s ease-out";
-  }
-});
-
-// Toggle Menu Icon ========================================
-let toggleIcon = document.querySelector(".menuIcon");
-
-toggleIcon.addEventListener("click", () => {
-  if (toggleIcon.className != "menuIcon toggle") {
-    toggleIcon.className += " toggle";
-  } else {
-    toggleIcon.className = "menuIcon";
-  }
-});
-
-// mail chimp
-type =
-  "text/javascript" >
-  window.dojoRequire(["mojo/signup-forms/Loader"], function (L) {
-    L.start({
-      baseUrl: "mc.us7.list-manage.com",
-      uuid: "4ae5921a3912b451ab862009e",
-      lid: "c5b62202c9",
-      uniqueMethods: true,
-    });
-  });
 
 //menu switching
 function show(id) {
