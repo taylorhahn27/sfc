@@ -2,18 +2,7 @@
   padding-top: 200px;
 }
 
-.img-responsive-menu {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-#menu-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* .about1 {
+.about1 {
   font-weight: lighter;
   font-size: 15px;
   letter-spacing: 3px;
@@ -22,9 +11,9 @@
   font-size: 18px;
   position: relative;
   padding-bottom: 50px;
-} */
+}
 
-/* #take-out-menu {
+#take-out-menu {
   text-align: center;
   font-family: "Josefin Sans";
   background: none !important;
@@ -36,7 +25,7 @@
   border: none;
   font-size: 18px;
   letter-spacing: 3px;
-} */
+}
 
 /* padding-top: 200px;
 padding-bottom: 200px;
@@ -63,7 +52,6 @@ button {
 
 .modal-content {
   background-color: white;
-   !important;
   color: black;
   font-weight: lighter;
 }
