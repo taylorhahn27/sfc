@@ -108,6 +108,7 @@ button {
 }
 
 .take-out-text {
+  font-size: 20px;
   font-weight: bolder !important;
   color: black;
 }
