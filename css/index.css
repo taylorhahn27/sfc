@@ -1,3 +1,12 @@
+.modal-middle-text {
+  border-top: 1px;
+  border: 1px solid #c5d9e7;
+}
+
+.small-text-modal {
+  font-size: 16px;
+}
+
 .img-responsive-menu {
   display: block;
   max-width: 100%;
