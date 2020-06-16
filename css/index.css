@@ -1326,7 +1326,7 @@ a {
 /*======================================================
                           Navbar
   ======================================================*/
-@media (max-width: 768px) {
+@media (max-width: 880px) {
   .main-menu {
     display: none;
   }
@@ -1495,7 +1495,7 @@ a {
 /*======================================================
                     Mobile Menu Menu Icon
   ======================================================*/
-@media (max-width: 768px) {
+@media (max-width: 880px) {
   .menuIcon {
     cursor: pointer;
     display: block;
@@ -1862,7 +1862,7 @@ a {
   /* transition: 0s; */
 }
 
-@media (min-width: 768px) {
+@media (min-width: 880px) {
   .overlay-menu {
     display: none;
   }
