@@ -382,7 +382,8 @@ main {
 
 /**********************************/
 
-.about {
+.about,
+.house-rules {
   padding-top: 150px;
   padding-bottom: 50px;
   font-weight: lighter;
@@ -393,6 +394,7 @@ main {
   font-size: 18px;
   position: relative;
 }
+
 
 /* @media (max-width: 768px) {
   .quote-breaker {
