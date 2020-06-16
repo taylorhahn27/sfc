@@ -395,6 +395,10 @@ main {
   position: relative;
 }
 
+.house-rules-title {
+  padding-top: 100px;
+}
+
 
 /* @media (max-width: 768px) {
   .quote-breaker {
