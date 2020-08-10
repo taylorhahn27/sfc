@@ -47,14 +47,13 @@
 }
 
 .takeout-button:hover {
-  color: #FFF;
+  color: #fff;
   background: white;
   border: 2px solid #c5d9e7;
 }
 
-
 .menu-page {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .about1 {
@@ -130,7 +129,8 @@ button {
 
 @font-face {
   font-family: "curwen_sansbold";
-  src: url("../fonts/webfontkit-bold/curwensans-bold-webfont.woff2") format("woff2"),
+  src: url("../fonts/webfontkit-bold/curwensans-bold-webfont.woff2")
+      format("woff2"),
     url("../fonts/webfontkit-bold/curwensans-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -266,7 +266,6 @@ div.wiggle:hover {
 /*****/
 
 @media (min-width: 500px) {
-
   #drink-button,
   #eat-button {
     display: initial !important;
@@ -399,7 +398,6 @@ main {
   padding-top: 80px;
 }
 
-
 /* @media (max-width: 768px) {
   .quote-breaker {
     margin-top: 300px !important;
@@ -450,7 +448,6 @@ main {
 } */
 
 @media (max-width: 767px) {
-
   .message1,
   .message {
     width: 100% !important;
@@ -461,6 +458,57 @@ main {
 
 .photos {
   padding-top: 100px;
+}
+
+.photos-menu {
+  padding-top: 80px;
+}
+
+.photos-menu1 {
+  padding-top: -50px;
+}
+
+.masonry1 {
+  /* Masonry container */
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+  margin: 1.5em;
+  padding: 0;
+  -moz-column-gap: 1.5em;
+  -webkit-column-gap: 1.5em;
+  column-gap: 1.5em;
+  font-size: 0.85em;
+}
+
+@media screen and (max-width: 767px) {
+  .gallery1 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+
+  .gallery1 div {
+    margin: 0;
+    width: 500px;
+  }
+
+  .modal-dialog {
+    margin: 0 5vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .gallery1 {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+
+  .gallery1 div {
+    margin: 0;
+    width: 500px;
+  }
 }
 
 .masonry {
@@ -774,7 +822,6 @@ main {
 }
 
 @media (max-width: 767px) {
-
   .message1,
   .message {
     width: 90% !important;
@@ -1254,7 +1301,7 @@ ul.social-network li {
 
 /* GALLERY */
 
-.image>div {
+.image > div {
   padding: 0 4px !important;
 }
 
@@ -1674,11 +1721,14 @@ a {
     -webkit-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s
+      cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -o-transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s
+      cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s
+      cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
       -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -1709,11 +1759,14 @@ a {
     -webkit-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s
+      cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -o-transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s
+      cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: -webkit-transform 0.4s
+      cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
       -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -2295,7 +2348,7 @@ body.hero-anime #switch {
     transition: all 200ms linear;
   }
 
-  .dropdown-toggle[aria-expanded="true"]+.dropdown-menu {
+  .dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
     margin-top: 10px !important;
     margin-bottom: 20px !important;
   }
