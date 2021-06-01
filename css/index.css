@@ -1,3 +1,31 @@
+.announcement {
+  display: inline-block;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  background: #c5d9e7;
+  color: black;
+  margin-top: 10px;
+  padding-top: 0;
+  vertical-align: middle;
+  font-size: 0.8em;
+  z-index: 1000000;
+}
+
+.announcement p {
+  padding: 10px;
+}
+
+.announcement a { 
+  color: black; 
+}
+
+.announcement a:hover {
+  color: white!important;
+}
+
+*******
+
 .modal-middle-text {
   border-top: 1px;
   border: 1px solid #c5d9e7;
@@ -34,7 +62,7 @@
 } */
 
 .takeout-button {
-  padding: 20px;
+  padding: 10px;
   font-size: 20px;
   color: black;
   letter-spacing: 1px;
